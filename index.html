@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewprot" content="Width=device-width, initail-scale=1.0">
+    <meta charset="utf-8">
+    <title>Personal Porfolio | Responsive Website Design</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo" >Porfolio</a>
+      <div class="toggle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Contact</a></li>
+
+      </ul>
+
+      </div>
+    </header>
+    <section class="banner">
+      <div class="textBx">
+        <h2>Hello, I'm <br><span> Prime Titi.</span></h2>
+        <h3>I'm a Software Engineering Student.</h3>
+        <a href="#" class="btn">About Me</a>
+
+      </div>
+
+    </section>
+    <section class="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="contentBx">
+          <h3>I'm a Software Engineering Studentspecialissing in Computer Security.</h3>
+          <p> Hey there, I'm Prime Titi a software engeering student at <a href="#">AICS Cameroon</a> Level1, <br>I chosed to professionalize in
+security engineering which is a very amazing and passionate field of study.<br><br>
+
+I believe Security in this our evolving world is becoming more and more curtail for our privacy
+and its the raeson I'm there to bring a little change. </p>
+
+        </div>
+        <div class="w50">
+          <img src="img/work2.jpg" alt="my picture" width="" height="">
+
+        </div>
+
+      </div>
+    </section>
+    <section class="Services">
+      <div class="heading white">
+        <h2>My Services</h2>
+        <p>Security And Maintainance Of Systems.</p>
+      </div>
+      <div class="content">
+        <div class="servicesBx">
+          <img src="" alt="">
+          <h2>Security</h2>
+          <p>testing the security of your Website, <br>Webserver, Enterprise Business etc.  </p>
+        </div>
+
+        <div class="servicesBx">
+          <img src="img/hack1.jpg" alt="" width="100px" height="100px">
+          <h2>Hacking</h2>
+          <p>Offensive and Defensive Hacking </p>
+        </div>
+
+        <div class="servicesBx">
+
+          <img src="img/test.jpg" alt="" width="100px" height="100px">
+
+          <h2>Maintainance of Equipments.</h2>
+          <p>Hardware maintainance and <br>security</p>
+        </div>
+
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener('scroll',function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+
+      });
+    </script>
+  </body>
+</html>
